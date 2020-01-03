@@ -38,11 +38,11 @@
 @media (max-width: 800px){
   #title, #subtitle{
     position: relative;
-    left: 35%;
+    align-self: center;
     width: 100%;
   }
   #subtitle{
-    left: 38%;
+
   }
 
   #start{
