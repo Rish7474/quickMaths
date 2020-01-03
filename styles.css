@@ -23,8 +23,6 @@
 #start:hover, #about:hover{
   background: orange;
   color: white;
-  left: 35%;
-  width: 30%;
 }
 
 #start{
@@ -38,11 +36,12 @@
 @media (max-width: 800px){
   #title, #subtitle{
     position: relative;
-    align-self: center;
-    width: 100%;
+    left: 30%;
+    width: 40%;
   }
   #subtitle{
-
+    left: 34%;
+    width: 50%;
   }
 
   #start{
