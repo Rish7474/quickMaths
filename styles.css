@@ -1,0 +1,36 @@
+#title{
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0%;
+}
+
+#subtitle{
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#start, #about{
+  background: lightgray;
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#start:hover, #about:hover{
+  background: orange;
+  color: white;
+  left: 35%;
+  width: 30%;
+}
+
+#start{
+    top: 50%;
+}
+
+#about{
+  top: 55%;
+}
