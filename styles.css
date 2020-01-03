@@ -28,9 +28,33 @@
 }
 
 #start{
-    top: 50%;
+    top: 65%;
 }
 
 #about{
-  top: 55%;
+  top: 70%;
+}
+
+@media (max-width: 800px){
+  #title, #subtitle{
+    position: relative;
+    left: 35%;
+    width: 100%;
+  }
+  #subtitle{
+    left: 38%;
+  }
+
+  #start{
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+  }
+  #about{
+    top: 70%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+  }
 }
