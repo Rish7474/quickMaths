@@ -1,17 +1,17 @@
 #title{
   position: relative;
-  width: 100%;
   margin-top: 5px;
   margin-bottom: 0%;
+  font-size: 45px;
 }
 
 #subtitle{
   position: relative;
-  width: 100%;
   margin-top: 5px;
+  font-size: 15px;
 }
 
-#start, #about{
+#start, #about, #directions{
   background: lightgray;
   position: absolute;
   left: 40%;
@@ -20,40 +20,38 @@
   padding-bottom: 2px;
 }
 
-#start:hover, #about:hover{
+#start:hover, #about:hover, #directions:hover{
   background: orange;
   color: white;
 }
 
 #start{
-    top: 65%;
+  top: 65%;
 }
-
 #about{
   top: 70%;
 }
+#directions{
+  top: 75%;
+}
 
 @media (max-width: 800px){
-  #title, #subtitle{
-    position: relative;
-    left: 30%;
-    width: 40%;
-  }
-  #subtitle{
-    left: 34%;
-    width: 50%;
-  }
-
   #start{
-    top: 30%;
+    top: 20%;
     left: 0%;
-    width: 100%;
-    height: 40%;
+    width: 50%;
+    height: 100%;
+  }
+  #directions{
+    top: 20%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
   }
   #about{
     top: 70%;
-    left: 0%;
-    width: 100%;
-    height: 40%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
   }
 }
