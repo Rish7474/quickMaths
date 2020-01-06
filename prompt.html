@@ -9,7 +9,25 @@
   <body>
     <img id="prompt" src="wk0.jpg" name="prompt">
     <form>
-      <input type="radio" class="mcq" value='one'>
-    </form>
+      <input type="radio" onclick="setAns('a')">a</input>
+      <input type="radio" onclick="setAns('b')">b</input>
+      <input type="radio" onclick="setAns('c')">c</input>
+      <input type="radio" onclick="setAns('d')">d</input>
+      <button type="submit" onclick="grade()">Submit</button>
+    <form>
+    <script>
+      ans = 'z';
+      function setAns(choice){
+        ans = choice;
+      }
+      function grade(){
+        if(ans === 'a'){
+          console.log("Correct!");
+        }
+        else {
+          console.log("Wrong");
+        }
+      }
+    </script>
   </body>
 </html>
