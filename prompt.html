@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <title>Prompt</title>
   </head>
-  <body>
+  <body id='result'>
+    <h1 id="result"></h1>
     <img id="prompt" src="wk0.jpg" name="prompt">
-    <form>
+    <form class="option">
       <input type="radio" onclick="setAns('a')">a</input>
       <input type="radio" onclick="setAns('b')">b</input>
       <input type="radio" onclick="setAns('c')">c</input>
@@ -21,11 +22,15 @@
         ans = choice;
       }
       function grade(){
+        document.body.innerHTML = "";
+        var outLoc = document.getElementById('result');
         if(ans === 'a'){
-          console.log("Correct!");
+          outLoc.style.color = "green";
+          outLoc.innerHTML = "Correct!";
         }
         else {
-          console.log("Wrong");
+          outLoc.style.color = "red";
+          outLoc.innerHTML = "Incorrect.";
         }
       }
     </script>

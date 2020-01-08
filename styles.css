@@ -58,6 +58,16 @@
 }
 /*prompt.html styling*/
 #prompt{
-  width: 50%;
+  width: 80%;
   height: auto;
+}
+
+.option{
+  position: absolute;
+  top: 80%;
+  size: 20%;
+}
+
+#result{
+  font-size: 50px;
 }
