@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Prompt</title>
   </head>
-  <body id='result'>
+  <body id="result">
     <h1 id="result"></h1>
     <img id="prompt" src="wk0.jpg" name="prompt">
     <form class="option">
@@ -23,15 +23,23 @@
       }
       function grade(){
         document.body.innerHTML = "";
-        var outLoc = document.getElementById('result');
+        var result = document.createElement("h5");
+
+        var sol = document.createElement("img");
+        sol.src = "sol0.jpg";
+        sol.style.width = "80%";
+        sol.style.height = "auto";
+
         if(ans === 'a'){
-          outLoc.style.color = "green";
-          outLoc.innerHTML = "Correct!";
+          result.appendChild(document.createTextNode("Correct!"));
+          result.style.color = "green";
         }
         else {
-          outLoc.style.color = "red";
-          outLoc.innerHTML = "Incorrect. The correct answer is 'a'.";
+          result.appendChild(document.createTextNode("Incorrect."));
+          result.style.color = "red";
         }
+        document.body.appendChild(result);
+        document.body.appendChild(sol);
       }
     </script>
   </body>
