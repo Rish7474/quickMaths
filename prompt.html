@@ -18,18 +18,15 @@
     <form>
     <script>
       //lines 21 to 32 deal with problem timer
-      var sec = 60;
+      var sec = 7;
       function timer(){
         document.getElementById('timer').innerHTML = sec + " seconds left";
         if(sec == 0){
           window.location = "timeout.html"
           return;
         }
-        if(sec <= 10){
-          document.getElementById('timer').style.background = "red";
-          document.getElementById('timer').style.width = "30%";
-          document.getElementById('timer').style.height = "auto";
-        }
+        if(sec <= 5)
+          document.getElementById('timer').style.background = "#FF4136";
         sec--;
       };
       setInterval(timer, 1000);

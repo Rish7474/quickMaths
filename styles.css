@@ -3,26 +3,38 @@
   position: relative;
   margin-top: 5px;
   margin-bottom: 0%;
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 #subtitle{
   position: relative;
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 15px;
 }
 
-#start, #about, #directions{
+#start{
+  background-color: #0074D9;
+  color: #7FDBFF;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 70%;
+  left: 40%;
+  font-size: 35px;
+  border-radius: 10%;
+}
+/*#start, #about, #directions{
   background: lightgray;
   position: absolute;
   left: 40%;
   width: 20%;
   padding-top: 2px;
   padding-bottom: 2px;
-}
+}*/
 
-#start:hover, #about:hover, #directions:hover{
-  background: orange;
+#start:hover{
+  background: #FF851B;
   color: white;
 }
 
@@ -40,10 +52,12 @@
   #start{
     top: 20%;
     left: 0%;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 95%;
+    border-radius: 0%;
+    font-size: 50px;
   }
-  #directions{
+  /*#directions{
     top: 20%;
     left: 50%;
     width: 50%;
@@ -54,7 +68,7 @@
     left: 50%;
     width: 50%;
     height: 50%;
-  }
+  }*/
 }
 /*prompt.html styling*/
 #prompt{
@@ -84,20 +98,27 @@ button{
     top: 60%;
   }
   button{
-    top: 85%;
     left: 30%;
   }
 }
 
 button:hover{
-  background: skyblue;
+  background: #0074D9;
+  color: #7FDBFF;
+  border-radius: 10%;
 }
 
 #timer{
   position: absolute;
   left: 70%;
   top: 30%;
-  background: green;
-  color: white;
+  background: #3D9970;
+  color: #DDDDDD;
   padding: 2% 2% 2% 2%;
+  border-radius: 5%;
+}
+
+/*Styling for timeout.html*/
+.message{
+  font-size: 20px;
 }
