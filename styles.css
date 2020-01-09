@@ -65,9 +65,39 @@
 .option{
   position: absolute;
   top: 80%;
-  size: 20%;
+  font-size: 40px;
+  left: 40%;
 }
 
-#result{
-  font-size: 50px;
+button{
+  position: absolute;
+  background-color: orange;
+  color: white;
+  top: 90%;
+  width: 40%;
+  left: 30%;
+}
+
+@media (max-width: 800px){
+  .option{
+    left: 30%;
+    top: 60%;
+  }
+  button{
+    top: 85%;
+    left: 30%;
+  }
+}
+
+button:hover{
+  background: skyblue;
+}
+
+#timer{
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  background: green;
+  color: white;
+  padding: 2% 2% 2% 2%;
 }

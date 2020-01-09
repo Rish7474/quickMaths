@@ -6,25 +6,41 @@
     <link rel="stylesheet" href="styles.css">
     <title>Prompt</title>
   </head>
-  <body id="result">
-    <h1 id="result"></h1>
+  <body onload="timer()">
+    <p id="timer">60 seconds</p>
     <img id="prompt" src="wk0.jpg" name="prompt">
     <form class="option">
-      <input type="radio" onclick="setAns('a')">a</input>
-      <input type="radio" onclick="setAns('b')">b</input>
-      <input type="radio" onclick="setAns('c')">c</input>
-      <input type="radio" onclick="setAns('d')">d</input>
-      <button type="submit" onclick="grade()">Submit</button>
+      <input type="radio" name="op" onclick="setAns('a')">a</input>
+      <input type="radio" name="op" onclick="setAns('b')">b</input>
+      <input type="radio" name="op" onclick="setAns('c')">c</input>
+      <input type="radio" name="op" onclick="setAns('d')">d</input>
+      <button id="submit" type="submit" onclick="grade()">Submit</button>
     <form>
     <script>
-      ans = 'z';
+      //lines 21 to 32 deal with problem timer
+      var sec = 60;
+      function timer(){
+        document.getElementById('timer').innerHTML = sec + " seconds left";
+        if(sec == 0){
+          window.location = "timeout.html"
+          return;
+        }
+        if(sec <= 10){
+          document.getElementById('timer').style.background = "red";
+          document.getElementById('timer').style.width = "30%";
+          document.getElementById('timer').style.height = "auto";
+        }
+        sec--;
+      };
+      setInterval(timer, 1000);
+      //lines 21 to 42 deal with user answer
+      ans = '';
       function setAns(choice){
         ans = choice;
       }
       function grade(){
         document.body.innerHTML = "";
-        var result = document.createElement("h5");
-
+        var result = document.createElement("h2");
         var sol = document.createElement("img");
         sol.src = "sol0.jpg";
         sol.style.width = "80%";
