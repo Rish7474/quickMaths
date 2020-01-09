@@ -24,14 +24,6 @@
   font-size: 35px;
   border-radius: 10%;
 }
-/*#start, #about, #directions{
-  background: lightgray;
-  position: absolute;
-  left: 40%;
-  width: 20%;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}*/
 
 #start:hover{
   background: #FF851B;
@@ -57,18 +49,7 @@
     border-radius: 0%;
     font-size: 50px;
   }
-  /*#directions{
-    top: 20%;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-  }
-  #about{
-    top: 70%;
-    left: 50%;
-    width: 50%;
-    height: 50%;
-  }*/
+
 }
 /*prompt.html styling*/
 #prompt{
