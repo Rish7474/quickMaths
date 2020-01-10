@@ -8,7 +8,7 @@
   </head>
   <body onload="timer()">
     <p id="timer">60 seconds</p>
-    <img id="prompt" src="wk0.jpg" name="prompt">
+    <img id="prompt" src="wk1.jpg" name="prompt">
     <form class="option">
       <input type="radio" name="op" onclick="setAns('a')">a</input>
       <input type="radio" name="op" onclick="setAns('b')">b</input>
@@ -18,14 +18,14 @@
     <form>
     <script>
       //lines 21 to 32 deal with problem timer
-      var sec = 30;
+      var sec = 20;
       function timer(){
         document.getElementById('timer').innerHTML = sec + " seconds left";
         if(sec == 0){
           window.location = "timeout.html"
           return;
         }
-        if(sec <= 5)
+        if(sec <= 10)
           document.getElementById('timer').style.background = "#FF4136";
         sec--;
       };
@@ -39,11 +39,11 @@
         document.body.innerHTML = "";
         var result = document.createElement("h2");
         var sol = document.createElement("img");
-        sol.src = "sol0.jpg";
+        sol.src = "sol1.jpg";
         sol.style.width = "80%";
         sol.style.height = "auto";
 
-        if(ans === 'a'){
+        if(ans === 'b'){
           result.appendChild(document.createTextNode("Correct!"));
           result.style.color = "green";
         }
