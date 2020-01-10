@@ -27,7 +27,7 @@
 
 #start:hover{
   background: #FF851B;
-  color: white;
+  color: #DDDDDD;
 }
 
 #start{
@@ -66,27 +66,12 @@
 
 button{
   position: absolute;
-  background-color: orange;
-  color: white;
+  background-color: #FF851B;
+  color: #DDDDDD;
   top: 90%;
   width: 40%;
   left: 30%;
-}
-
-@media (max-width: 800px){
-  .option{
-    left: 30%;
-    top: 60%;
-  }
-  button{
-    left: 30%;
-  }
-}
-
-button:hover{
-  background: #0074D9;
-  color: #7FDBFF;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 #timer{
@@ -99,7 +84,30 @@ button:hover{
   border-radius: 5%;
 }
 
+@media (max-width: 800px){
+  .option{
+    left: 30%;
+    top: 60%;
+  }
+  button{
+    height: 70%;
+    width: 45%;
+    left: 27%;
+  }
+  #timer{
+    top: 52%;
+    left: 38%;
+  }
+}
+
+button:hover{
+  background: #0074D9;
+  color: #7FDBFF;
+  border-radius: 10%;
+}
+
 /*Styling for timeout.html*/
 .message{
   font-size: 20px;
 }
+
