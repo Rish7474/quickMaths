@@ -8,5 +8,5 @@ Future Updates:
   -Add accounts and account level (tracks questios answered correctly)
   -Add dark mode
 
-Technonoglies: HTML, CSS, Javascript
+Tech Used: HTML, CSS, Javascript
 Dependicies: N/A
