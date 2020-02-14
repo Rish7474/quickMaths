@@ -9,4 +9,5 @@ Future Updates:
   -Add dark mode
 
 Tech Used: HTML, CSS, Javascript
+
 Dependicies: N/A
